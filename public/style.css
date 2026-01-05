@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.crud-card {
+    width: 380px;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.crud-card h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.btn-crud {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+/* Button colors */
+.create {
+    background-color: #4caf50;
+}
+.read {
+    background-color: #2196f3;
+}
+.update {
+    background-color: #ff9800;
+}
+.delete {
+    background-color: #f44336;
+}
+
+/* Hover effects */
+.btn-crud:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
