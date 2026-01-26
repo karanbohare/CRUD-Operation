@@ -23,6 +23,7 @@
 
                 <!-- Contact -->
                 <div class="mb-3">
+                    <label> </label>
                     <label class="form-label">Contact Number</label>
                     <input type="tel" class="form-control" id="contact" placeholder="Enter contact number" required>
                 </div>
@@ -44,8 +45,7 @@ $(document).ready(function(){
 
         let name = $("#name").val();
         let contact = $("#contact").val();
-
-        $({
+        $.ajax({
             url: "/users",
             method: "POST",
             contentType: "application/json",
