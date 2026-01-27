@@ -1,12 +1,9 @@
 module.exports = function userController(userService) {
-
     return {
         addUser(req, res) {
             const { name, contact } = req.body;
-
             userService.addUser(name, contact, (err, result) => {
                 if (err) return res.status(400).json(err);
-
                 res.json({
                     message: "User added successfully",
                     id: result.insertId

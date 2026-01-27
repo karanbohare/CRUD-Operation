@@ -1,7 +1,7 @@
 module.exports = function userRepository(db) {
 
     return {
-        create(name, contact, callback) {
+        addUser(name, contact, callback) {
             const sql = 'INSERT INTO users (name, contact) VALUES (?, ?)';
             db.query(sql, [name, contact], callback);
         },

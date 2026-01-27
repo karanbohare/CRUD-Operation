@@ -14,9 +14,10 @@ const userService = require('../services/userService')(userRepository);
 const userController = require('../controllers/userController')(userService);
 
 // routes
-router.post('/', userController.addUser);
-router.delete('/:id', userController.deleteUser);
-router.get('/api/users', userController.getUsers);
-router.put('/:id', userController.updateUser);
+router.post('/users', userController.addUser);      // CREATE
+router.get('/getAllUsers', userController.getUsers);      // READ
+router.put('/updateRecord/:id', userController.updateUser); // UPDATE
+router.delete('/delete/:id', userController.deleteUser); // DELETE
+
 
 module.exports = router;
