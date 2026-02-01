@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.post("/submit", (req, res) => {
   const name = req.body.username;
 
-  // ✅ Save name to a file
+  
   fs.appendFileSync("names.txt", name + "\n");
 
   res.send(`<h2>Name Saved: ${name}</h2>`);
